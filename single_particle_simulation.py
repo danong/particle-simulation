@@ -1,11 +1,15 @@
 """An n-Particle Simulation using Lennard-Jones potential.
 
-Source:
+Sources:
+LJ Potential
 http://polymer.bu.edu/Wasser/robert/work/node8.html
+PyGame
+http://www.petercollingridge.co.uk/pygame-physics-simulation
 """
 import pygame
 import random
 import math
+import itertools
 
 # HELPER FUNCTIONS
 def add_vector((angle1, length1), (angle2, length2)):
@@ -16,6 +20,9 @@ def add_vector((angle1, length1), (angle2, length2)):
     angle = 0.5 * math.pi - math.atan2(y_component, x_component)
     return angle, length
 
+def find_angle(a, b):
+    """Find angle between two particles"""
+    return math.atan2((b.x-a.x), (b.y-a.y)) + math.pi/2
 
 def lj_potential(epsilon, sigma, r):
     """Return the lj potential of two particles
@@ -72,7 +79,7 @@ class Particle:
         self.x = x
         self.y = y
         self.size = size
-        self.color = (0, 0, 255)
+        self.color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
         self.thickness = 0
         self.speed = 0
         self.angle = 0
@@ -106,10 +113,10 @@ class Particle:
 
 # environmental variables
 background_color = (255, 255, 255)
-(width, height) = (1200, 800)
-number_of_particles = 2
-epsilon = 0.65
-sigma = 0.3166
+(width, height) = (1366, 768)
+number_of_particles = 3
+epsilon = 0.5
+sigma = 200
 
 if __name__ == '__main__':
     # create screen
@@ -121,19 +128,13 @@ if __name__ == '__main__':
 
     for n in range(number_of_particles):
         # randomize starting particle attributes for now
-        # size = random.randint(10, 20)
-        # x = random.randint(size, width-size)
-        # y = random.randint(size, height-size)
-
-        # particle = Particle((x, y), size)
-        # particle.speed = random.random()
-        # particle.angle = random.uniform(0, math.pi*2)
-        size = 10
+        size = 5
         x = random.randint(size, width-size)
         y = random.randint(size, height-size)
+
         particle = Particle((x, y), size)
-        particle.speed = 0.5
-        particle.angle = random.uniform(0, math.pi*2)
+        particle.speed = 0
+        particle.angle = 0
         my_particles.append(particle)
 
     # render screen
@@ -147,12 +148,24 @@ if __name__ == '__main__':
         # fill screen with background color
         screen.fill(background_color)
 
+        # calculate inter-particle forces
+        for a, b in itertools.combinations(my_particles, 2):
+            temp_lj_force = lj_force(epsilon, sigma, particle_distance(a, b))
+            temp_angle = find_angle(my_particles[0], my_particles[1])
+            (a.angle, a.speed) = add_vector((a.angle, a.speed), (temp_angle, temp_lj_force))
+            (b.angle, b.speed) = add_vector((b.angle, b.speed), (temp_angle+math.pi, temp_lj_force))
+
         # fill screen with updated particles
         for particle in my_particles:
+            # hacking together dampening so particles don't fly off the screen
+            if particle.speed > 5:
+                particle.speed %= 5 + 10
+            if particle.x > width:
+                particle.x %= width
+            if particle.y > height:
+                particle.y %= height
+
             particle.move()
             particle.bounce()
             particle.display()
-
-        print("lj force: ", lj_force(epsilon, sigma, particle_distance(my_particles[0], my_particles[1])))
-
         pygame.display.flip()

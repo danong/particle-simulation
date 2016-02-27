@@ -22,7 +22,7 @@ def add_vector((angle1, length1), (angle2, length2)):
 
 def find_angle(a, b):
     """Find angle between two particles"""
-    return math.atan2((b.x-a.x), (b.y-a.y)) + math.pi/2
+    return math.atan2((b.y-a.y), (b.x-a.x)) + math.pi/2
 
 def lj_potential(epsilon, sigma, r):
     """Return the lj potential of two particles
@@ -113,10 +113,10 @@ class Particle:
 
 # environmental variables
 background_color = (255, 255, 255)
-(width, height) = (1366, 768)
+(width, height) = (700, 700)
 number_of_particles = 3
-epsilon = 0.5
-sigma = 200
+epsilon = 0.001
+sigma = 250
 
 if __name__ == '__main__':
     # create screen
@@ -128,7 +128,7 @@ if __name__ == '__main__':
 
     for n in range(number_of_particles):
         # randomize starting particle attributes for now
-        size = 5
+        size = 20
         x = random.randint(size, width-size)
         y = random.randint(size, height-size)
 

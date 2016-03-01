@@ -15,8 +15,8 @@ import itertools
 background_color = (255, 255, 255)
 (width, height) = (1900, 1000)
 number_of_particles = 20
-epsilon = 0.01
-sigma = 200
+epsilon = 0.000000001
+sigma = 300
 particle_size = 10
 
 # HELPER FUNCTIONS
@@ -152,7 +152,7 @@ if __name__ == '__main__':
         # calculate inter-particle forces
         for a, b in itertools.combinations(my_particles, 2):
             temp_lj_force = lj_force(epsilon, sigma, particle_distance(a, b))
-            temp_angle = find_angle(my_particles[0], my_particles[1])
+            temp_angle = find_angle(a, b)
             (a.angle, a.speed) = add_vector((a.angle, a.speed), (temp_angle, temp_lj_force))
             (b.angle, b.speed) = add_vector((b.angle, b.speed), (temp_angle+math.pi, temp_lj_force))
 

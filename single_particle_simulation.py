@@ -1,9 +1,16 @@
 """An n-Particle Simulation using Lennard-Jones potential.
 
+We simulate n (up to ~200 on my computer) particles which repel each other when close to each other and repel when far
+from each other. For each particle, we calculate the LJ force it experiences from every other particle.
+
+We sum all the force vectors to determine the overall force and use
+that overall force vector calculate the new position, angle, and velocity of each particle. Once that calculation is
+complete for all particles, the program renders the screen with the particles.
+
 Sources:
 LJ Potential
 http://polymer.bu.edu/Wasser/robert/work/node8.html
-PyGame
+PyGame Tutorial:
 http://www.petercollingridge.co.uk/pygame-physics-simulation
 """
 import pygame
@@ -21,7 +28,11 @@ particle_size = 10
 
 # HELPER FUNCTIONS
 def add_vector((angle1, length1), (angle2, length2)):
-    """Return the resultant sum of two vectors"""
+    """Return the resultant sum of two vectors
+    Parameters:
+        (angle1, length1): Angle and length of first vector
+        (angle2, length2): Angle and length of second vector
+    """
     x_component = math.sin(angle1) * length1 + math.sin(angle2) * length2
     y_component = math.cos(angle1) * length1 + math.cos(angle2) * length2
     length = math.hypot(x_component, y_component)
@@ -29,7 +40,11 @@ def add_vector((angle1, length1), (angle2, length2)):
     return angle, length
 
 def find_angle(a, b):
-    """Find angle between two particles"""
+    """Find angle between two particles
+    Parameters:
+        a (Particle): first particle
+        b (Particle): second particle
+    """
     return math.atan2((b.y-a.y), (b.x-a.x)) + math.pi/2
 
 def lj_potential(epsilon, sigma, r):
@@ -169,4 +184,5 @@ if __name__ == '__main__':
             particle.move()
             particle.bounce()
             particle.display()
+
         pygame.display.flip()

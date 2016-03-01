@@ -11,6 +11,14 @@ import random
 import math
 import itertools
 
+# environmental variables
+background_color = (255, 255, 255)
+(width, height) = (1900, 1000)
+number_of_particles = 20
+epsilon = 0.01
+sigma = 200
+particle_size = 10
+
 # HELPER FUNCTIONS
 def add_vector((angle1, length1), (angle2, length2)):
     """Return the resultant sum of two vectors"""
@@ -111,13 +119,6 @@ class Particle:
         self.x += math.sin(self.angle) * self.speed
         self.y -= math.cos(self.angle) * self.speed
 
-# environmental variables
-background_color = (255, 255, 255)
-(width, height) = (700, 700)
-number_of_particles = 3
-epsilon = 0.001
-sigma = 250
-
 if __name__ == '__main__':
     # create screen
     screen = pygame.display.set_mode((width, height))
@@ -128,7 +129,7 @@ if __name__ == '__main__':
 
     for n in range(number_of_particles):
         # randomize starting particle attributes for now
-        size = 20
+        size = particle_size
         x = random.randint(size, width-size)
         y = random.randint(size, height-size)
 
@@ -158,8 +159,8 @@ if __name__ == '__main__':
         # fill screen with updated particles
         for particle in my_particles:
             # hacking together dampening so particles don't fly off the screen
-            if particle.speed > 5:
-                particle.speed %= 5 + 10
+            if particle.speed > 10:
+                particle.speed %= 10 + 10
             if particle.x > width:
                 particle.x %= width
             if particle.y > height:

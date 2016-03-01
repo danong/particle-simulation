@@ -141,7 +141,7 @@ if __name__ == '__main__':
 
     # create and populate a list of particles
     my_particles = []
-
+    c = pygame.time.Clock()
     for n in range(number_of_particles):
         # randomize starting particle attributes for now
         size = particle_size
@@ -184,5 +184,5 @@ if __name__ == '__main__':
             particle.move()
             particle.bounce()
             particle.display()
-
+        c.tick(20)
         pygame.display.flip()

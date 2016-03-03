@@ -17,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/particle_simulation$single_particle_simulation.coverage" NAME="single_particle_simulation Coverage Results" MODIFIED="1456904951447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/particle_simulation$single_particle_simulation.coverage" NAME="single_particle_simulation Coverage Results" MODIFIED="1457042519572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/particle_simulation$scratch_1.coverage" NAME="scratch_1 Coverage Results" MODIFIED="1456872583721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -32,21 +32,15 @@
       <file leaf-file-name="single_particle_simulation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/single_particle_simulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50341684">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6243094">
+              <caret line="177" column="88" selection-start-line="177" selection-start-column="88" selection-end-line="177" selection-end-column="88" />
               <folding>
-                <element signature="e#0#704#1" expanded="true" />
-                <element signature="e#705#718#0" expanded="true" />
-                <element signature="e#1027#1502#0" expanded="true" />
-                <element signature="e#1530#1720#0" expanded="true" />
-                <element signature="e#1763#2051#0" expanded="true" />
-                <element signature="e#2091#2454#0" expanded="true" />
-                <element signature="e#2490#2679#0" expanded="true" />
-                <element signature="e#2702#3011#1" expanded="true" />
-                <element signature="e#3059#3422#0" expanded="true" />
-                <element signature="e#3455#3588#0" expanded="true" />
-                <element signature="e#3620#4304#0" expanded="true" />
-                <element signature="e#4334#4482#0" expanded="true" />
+                <element signature="e#0#706#1" expanded="true" />
+                <element signature="e#707#720#0" expanded="true" />
+                <element signature="e#1030#1505#0" expanded="true" />
+                <element signature="e#1533#1723#0" expanded="true" />
+                <element signature="e#1766#2054#0" expanded="true" />
+                <element signature="e#2094#2457#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -420,18 +414,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33260393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33774835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33774835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -455,18 +449,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#704#1" expanded="true" />
-            <element signature="e#705#718#0" expanded="true" />
-            <element signature="e#1027#1502#0" expanded="true" />
-            <element signature="e#1530#1720#0" expanded="true" />
-            <element signature="e#1763#2051#0" expanded="true" />
-            <element signature="e#2091#2454#0" expanded="true" />
-            <element signature="e#2490#2679#0" expanded="true" />
-            <element signature="e#2702#3011#1" expanded="true" />
-            <element signature="e#3059#3422#0" expanded="true" />
-            <element signature="e#3455#3588#0" expanded="true" />
-            <element signature="e#3620#4304#0" expanded="true" />
-            <element signature="e#4334#4482#0" expanded="true" />
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -491,18 +479,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#704#1" expanded="true" />
-            <element signature="e#705#718#0" expanded="true" />
-            <element signature="e#1027#1502#0" expanded="true" />
-            <element signature="e#1530#1720#0" expanded="true" />
-            <element signature="e#1763#2051#0" expanded="true" />
-            <element signature="e#2091#2454#0" expanded="true" />
-            <element signature="e#2490#2679#0" expanded="true" />
-            <element signature="e#2702#3011#1" expanded="true" />
-            <element signature="e#3059#3422#0" expanded="true" />
-            <element signature="e#3455#3588#0" expanded="true" />
-            <element signature="e#3620#4304#0" expanded="true" />
-            <element signature="e#4334#4482#0" expanded="true" />
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,18 +509,102 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#704#1" expanded="true" />
-            <element signature="e#705#718#0" expanded="true" />
-            <element signature="e#1027#1502#0" expanded="true" />
-            <element signature="e#1530#1720#0" expanded="true" />
-            <element signature="e#1763#2051#0" expanded="true" />
-            <element signature="e#2091#2454#0" expanded="true" />
-            <element signature="e#2490#2679#0" expanded="true" />
-            <element signature="e#2702#3011#1" expanded="true" />
-            <element signature="e#3059#3422#0" expanded="true" />
-            <element signature="e#3455#3588#0" expanded="true" />
-            <element signature="e#3620#4304#0" expanded="true" />
-            <element signature="e#4334#4482#0" expanded="true" />
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#67#161#0" expanded="true" />
+            <element signature="e#183#492#1" expanded="true" />
+            <element signature="e#974#1107#0" expanded="true" />
+            <element signature="e#1139#1823#0" expanded="true" />
+            <element signature="e#1853#2001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single_particle_simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#67#161#0" expanded="true" />
+            <element signature="e#183#492#1" expanded="true" />
+            <element signature="e#974#1107#0" expanded="true" />
+            <element signature="e#1139#1823#0" expanded="true" />
+            <element signature="e#1853#2001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single_particle_simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#67#161#0" expanded="true" />
+            <element signature="e#183#492#1" expanded="true" />
+            <element signature="e#974#1107#0" expanded="true" />
+            <element signature="e#1139#1823#0" expanded="true" />
+            <element signature="e#1853#2001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single_particle_simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -563,18 +629,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#704#1" expanded="true" />
-            <element signature="e#705#718#0" expanded="true" />
-            <element signature="e#1027#1502#0" expanded="true" />
-            <element signature="e#1530#1720#0" expanded="true" />
-            <element signature="e#1763#2051#0" expanded="true" />
-            <element signature="e#2091#2454#0" expanded="true" />
-            <element signature="e#2490#2679#0" expanded="true" />
-            <element signature="e#2702#3011#1" expanded="true" />
-            <element signature="e#3059#3422#0" expanded="true" />
-            <element signature="e#3455#3588#0" expanded="true" />
-            <element signature="e#3620#4304#0" expanded="true" />
-            <element signature="e#4334#4482#0" expanded="true" />
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,18 +659,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#704#1" expanded="true" />
-            <element signature="e#705#718#0" expanded="true" />
-            <element signature="e#1027#1502#0" expanded="true" />
-            <element signature="e#1530#1720#0" expanded="true" />
-            <element signature="e#1763#2051#0" expanded="true" />
-            <element signature="e#2091#2454#0" expanded="true" />
-            <element signature="e#2490#2679#0" expanded="true" />
-            <element signature="e#2702#3011#1" expanded="true" />
-            <element signature="e#3059#3422#0" expanded="true" />
-            <element signature="e#3455#3588#0" expanded="true" />
-            <element signature="e#3620#4304#0" expanded="true" />
-            <element signature="e#4334#4482#0" expanded="true" />
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -620,18 +674,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#704#1" expanded="true" />
-            <element signature="e#705#718#0" expanded="true" />
-            <element signature="e#1027#1502#0" expanded="true" />
-            <element signature="e#1530#1720#0" expanded="true" />
-            <element signature="e#1763#2051#0" expanded="true" />
-            <element signature="e#2091#2454#0" expanded="true" />
-            <element signature="e#2490#2679#0" expanded="true" />
-            <element signature="e#2702#3011#1" expanded="true" />
-            <element signature="e#3059#3422#0" expanded="true" />
-            <element signature="e#3455#3588#0" expanded="true" />
-            <element signature="e#3620#4304#0" expanded="true" />
-            <element signature="e#4334#4482#0" expanded="true" />
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -660,21 +708,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/single_particle_simulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50341684">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.6243094">
+          <caret line="177" column="88" selection-start-line="177" selection-start-column="88" selection-end-line="177" selection-end-column="88" />
           <folding>
-            <element signature="e#0#704#1" expanded="true" />
-            <element signature="e#705#718#0" expanded="true" />
-            <element signature="e#1027#1502#0" expanded="true" />
-            <element signature="e#1530#1720#0" expanded="true" />
-            <element signature="e#1763#2051#0" expanded="true" />
-            <element signature="e#2091#2454#0" expanded="true" />
-            <element signature="e#2490#2679#0" expanded="true" />
-            <element signature="e#2702#3011#1" expanded="true" />
-            <element signature="e#3059#3422#0" expanded="true" />
-            <element signature="e#3455#3588#0" expanded="true" />
-            <element signature="e#3620#4304#0" expanded="true" />
-            <element signature="e#4334#4482#0" expanded="true" />
+            <element signature="e#0#706#1" expanded="true" />
+            <element signature="e#707#720#0" expanded="true" />
+            <element signature="e#1030#1505#0" expanded="true" />
+            <element signature="e#1533#1723#0" expanded="true" />
+            <element signature="e#1766#2054#0" expanded="true" />
+            <element signature="e#2094#2457#0" expanded="true" />
           </folding>
         </state>
       </provider>

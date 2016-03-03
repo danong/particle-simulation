@@ -1,6 +1,6 @@
 """An n-Particle Simulation using Lennard-Jones potential.
 
-We simulate n (up to ~200 on my computer) particles which repel each other when close to each other and repel when far
+We simulate n (up to ~200 on my computer) particles which repel each other when close to each other and attract when far
 from each other. For each particle, we calculate the LJ force it experiences from every other particle.
 
 We sum all the force vectors to determine the overall force and use
@@ -25,6 +25,7 @@ number_of_particles = 20
 epsilon = 0.000000001
 sigma = 300
 particle_size = 10
+speed_limit = 10
 
 # HELPER FUNCTIONS
 def add_vector((angle1, length1), (angle2, length2)):
@@ -173,13 +174,8 @@ if __name__ == '__main__':
 
         # fill screen with updated particles
         for particle in my_particles:
-            # hacking together dampening so particles don't fly off the screen
-            if particle.speed > 10:
-                particle.speed %= 10 + 10
-            if particle.x > width:
-                particle.x %= width
-            if particle.y > height:
-                particle.y %= height
+            if particle.speed > speed_limit:
+                particle.speed = speed_limit + math.log(particle.speed - speed_limit - 1)
 
             particle.move()
             particle.bounce()

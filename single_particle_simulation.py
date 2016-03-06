@@ -26,7 +26,7 @@ epsilon = 0.000000001
 sigma = 300
 particle_size = 10
 speed_limit = 10
-speed_multiplier = 10
+speed_multiplier = 1
 kinetic_energy = 0
 potential_energy = 0
 

@@ -26,6 +26,9 @@ epsilon = 0.000000001
 sigma = 300
 particle_size = 10
 speed_limit = 10
+speed_multiplier = 10
+kinetic_energy = 0
+potential_energy = 0
 
 # HELPER FUNCTIONS
 def add_vector((angle1, length1), (angle2, length2)):
@@ -115,25 +118,25 @@ class Particle:
     def bounce(self):
         """Detects if particle has moved beyond the boundary and fixes its position."""
         # fix x coordinate if x is beyond boundary
-        if self.x > width - self.size:
+        while self.x > width - self.size:
             self.x = 2*(width - self.size) - self.x
             self.angle = - self.angle
-        elif self.x < self.size:
+        while self.x < self.size:
             self.x = 2*self.size - self.x
             self.angle = - self.angle
 
         # fix y coordinate if y is beyond boundary
-        if self.y > height - self.size:
+        while self.y > height - self.size:
             self.y = 2*(height - self.size) - self.y
             self.angle = math.pi - self.angle
-        elif self.y < self.size:
+        while self.y < self.size:
             self.y = 2*self.size - self.y
             self.angle = math.pi - self.angle
 
     def move(self):
         """Update position given angle and speed."""
-        self.x += math.sin(self.angle) * self.speed
-        self.y -= math.cos(self.angle) * self.speed
+        self.x += math.sin(self.angle) * self.speed * speed_multiplier
+        self.y -= math.cos(self.angle) * self.speed * speed_multiplier
 
 if __name__ == '__main__':
     # create screen
@@ -157,6 +160,7 @@ if __name__ == '__main__':
     # render screen
     running = True
     while running:
+        kinetic_energy = potential_energy = 0
         # allow program to quit
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -171,14 +175,15 @@ if __name__ == '__main__':
             temp_angle = find_angle(a, b)
             (a.angle, a.speed) = add_vector((a.angle, a.speed), (temp_angle, temp_lj_force))
             (b.angle, b.speed) = add_vector((b.angle, b.speed), (temp_angle+math.pi, temp_lj_force))
+            potential_energy += lj_potential(epsilon, sigma, particle_distance(a, b))
 
         # fill screen with updated particles
         for particle in my_particles:
-            if particle.speed > speed_limit:
-                particle.speed = speed_limit + math.log(particle.speed - speed_limit - 1)
-
+            kinetic_energy += 0.5 * particle.speed**2
             particle.move()
             particle.bounce()
             particle.display()
-        c.tick(20)
+        c.tick(120/speed_multiplier)
         pygame.display.flip()
+
+        print("Total Energy: ", kinetic_energy+potential_energy)
